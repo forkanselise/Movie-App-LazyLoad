@@ -1,0 +1,19 @@
+
+<div>
+  <div class="banner" *ngFor="let item of slide index as i" @slideFade>
+    <div class="banner__box" *ngIf="i == currentIndex">
+      <img class="poster" [src]="imageBaseUrl+item.backdrop_path" alt="">
+
+      <div class="details">
+        <span class="title">
+          {{item.original_title}}
+        </span>
+
+        <span class="description">
+          {{item.overview}}
+        </span>
+      </div>
+    </div>
+
+  </div>
+</div>

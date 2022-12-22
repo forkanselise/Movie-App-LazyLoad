@@ -1,0 +1,24 @@
+.banner {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  // display: flex;
+  &__box {
+    // position: absolute;
+    .poster {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .details{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 50px;
+      left: 100px;
+      border: 1px solid red;
+    }
+  }
+}
